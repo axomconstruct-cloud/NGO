@@ -1,0 +1,20 @@
+{
+    "framework": "vite",
+      "installCommand": "npm install",
+        "buildCommand": "npm run build",
+          "outputDirectory": "dist",
+            "rewrites": [
+                {
+                      "source": "/api/admin/:resource(volunteers|contacts)/:id/status",
+                            "destination": "/api/admin-router?path=:resource/:id/status"
+                                },
+                                    {
+                                          "source": "/api/admin/:resource(causes|stories|events|news|gallery|team_members|partners)/:id",
+                                                "destination": "/api/admin-router?path=:resource/:id"
+                                                    },
+                                                        {
+                                                              "source": "/api/admin/:resource(causes|stories|events|news|gallery|team_members|partners)",
+                                                                    "destination": "/api/admin-router?path=:resource"
+                                                                        }
+                                                                          ]
+                                                                          }

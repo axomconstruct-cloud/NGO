@@ -1,0 +1,25 @@
+{
+  "name": "hope-heart-ngo-fullstack",
+  "private": true,
+  "version": "2.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "dev:vite": "vite --host 0.0.0.0 --port $PORT",
+    "dev:vercel": "vercel dev --listen 3000",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.52.0",
+    "@vitejs/plugin-react": "latest",
+    "dotenv": "^17.4.2",
+    "lucide-react": "latest",
+    "razorpay": "^2.9.6",
+    "react": "latest",
+    "react-dom": "latest",
+    "vercel": "latest",
+    "vite": "latest",
+    "ws": "^8.21.0"
+  }
+}
